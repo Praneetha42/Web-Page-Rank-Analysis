@@ -504,47 +504,189 @@
 
 
             <!-- ABOUT PROJECT -->
-            <section id="aboutSection" class="page-section hidden">
+            
+<section id="aboutSection" class="section">
+    <div class="about-container">
 
-                <div class="section-heading">
-                    <h1>About WebRank</h1>
-                    <p>Understanding the project and its technology.</p>
+        <div class="about-header">
+            <h1>About WebRank</h1>
+            <p>
+                WebRank is a Web Page Ranking and Link Analysis System
+                developed using C and web technologies.
+            </p>
+        </div>
+
+        <!-- Project Overview -->
+        <div class="about-card">
+            <h2>📌 Project Overview</h2>
+            <p>
+                WebRank is an Advanced Data Structures project that
+                represents webpages as nodes and hyperlinks as edges
+                in a directed graph. It calculates webpage importance
+                using the PageRank algorithm.
+            </p>
+        </div>
+
+        <!-- Objectives -->
+        <div class="about-card">
+            <h2>🎯 Project Objectives</h2>
+            <ul>
+                <li>Represent webpages using graph data structures.</li>
+                <li>Analyze connections between webpages.</li>
+                <li>Calculate webpage importance using PageRank.</li>
+                <li>Provide webpage searching and ranking features.</li>
+                <li>Visualize webpage connections interactively.</li>
+            </ul>
+        </div>
+
+        <!-- Programming Languages -->
+        <div class="about-card">
+            <h2>💻 Programming Languages</h2>
+            <div class="about-grid">
+                <div class="tech-item">
+                    <h3>C</h3>
+                    <p>Backend logic and PageRank calculation.</p>
                 </div>
-
-                <div class="content-card">
-                    <h2>Project Overview</h2>
-
-                    <p>
-                        WebRank is a Web Page Ranking and Link Analysis
-                        System that analyzes relationships between
-                        webpages and calculates their importance using
-                        the PageRank algorithm.
-                    </p>
+                <div class="tech-item">
+                    <h3>HTML</h3>
+                    <p>Website structure and content.</p>
                 </div>
-
-                <div class="content-card">
-                    <h2>Core Technologies</h2>
-
-                    <p><strong>Frontend:</strong> HTML, CSS and JavaScript</p>
-                    <p><strong>Backend:</strong> C Programming Language</p>
-                    <p><strong>Web Server:</strong> Mongoose</p>
-                    <p><strong>Data Structure:</strong> Adjacency Matrix</p>
-                    <p><strong>Searching:</strong> Linear Search</p>
-                    <p><strong>Ranking:</strong> PageRank Algorithm</p>
-                    <p><strong>Storage:</strong> File Handling</p>
+                <div class="tech-item">
+                    <h3>CSS</h3>
+                    <p>Website styling and layout.</p>
                 </div>
-
-                <div class="content-card">
-                    <h2>Project Objective</h2>
-
-                    <p>
-                        To represent webpage relationships as a directed
-                        graph and rank webpages according to their
-                        importance and incoming links.
-                    </p>
+                <div class="tech-item">
+                    <h3>JavaScript</h3>
+                    <p>Frontend interactions and API communication.</p>
                 </div>
+            </div>
+        </div>
 
-            </section>
+        <!-- Data Structures -->
+        <div class="about-card">
+            <h2>🧩 Data Structures Used</h2>
+
+            <div class="tech-item">
+                <h3>Graph</h3>
+                <p>
+                    Represents webpages as vertices and hyperlinks
+                    as directed edges.
+                </p>
+            </div>
+
+            <div class="tech-item">
+                <h3>Adjacency Matrix</h3>
+                <p>
+                    Stores webpage connections using a two-dimensional
+                    array. A value of 1 indicates a link, while 0
+                    indicates no link.
+                </p>
+                <code>links[MAX_PAGES][MAX_PAGES]</code>
+            </div>
+
+            <div class="tech-item">
+                <h3>Arrays</h3>
+                <p>
+                    Store webpage names, PageRank scores, and
+                    other webpage information.
+                </p>
+            </div>
+        </div>
+
+        <!-- Algorithms -->
+        <div class="about-card">
+            <h2>⚙️ Algorithms Used</h2>
+
+            <div class="tech-item">
+                <h3>PageRank Algorithm</h3>
+                <p>
+                    Calculates the importance of webpages based on
+                    incoming links and the importance of linking pages.
+                </p>
+            </div>
+
+            <div class="tech-item">
+                <h3>Linear Search</h3>
+                <p>
+                    Searches for a webpage by comparing its name
+                    with stored webpage names.
+                </p>
+            </div>
+        </div>
+
+        <!-- Core Technologies -->
+        <div class="about-card">
+            <h2>🛠️ Core Technologies</h2>
+            <ul>
+                <li><strong>C Backend:</strong> Handles webpage management and ranking.</li>
+                <li><strong>Mongoose:</strong> Provides the embedded C web server.</li>
+                <li><strong>HTML, CSS, JavaScript:</strong> Develop the interactive frontend.</li>
+                <li><strong>File Handling:</strong> Stores webpage information in website_data.txt.</li>
+                <li><strong>API Endpoints:</strong> Connect the frontend with the C backend.</li>
+            </ul>
+        </div>
+
+        <!-- Architecture -->
+        <div class="about-card">
+            <h2>🏗️ System Architecture</h2>
+            <div class="architecture">
+                <div class="architecture-box">Frontend<br>
+                    <small>HTML + CSS + JavaScript</small>
+                </div>
+                <div class="architecture-arrow">↓</div>
+                <div class="architecture-box">Web Server<br>
+                    <small>Mongoose</small>
+                </div>
+                <div class="architecture-arrow">↓</div>
+                <div class="architecture-box">C Backend<br>
+                    <small>Graph + Adjacency Matrix + Arrays</small>
+                </div>
+                <div class="architecture-arrow">↓</div>
+                <div class="architecture-box">PageRank Algorithm</div>
+                <div class="architecture-arrow">↓</div>
+                <div class="architecture-box">Webpage Ranking Results</div>
+            </div>
+        </div>
+
+        <!-- Features -->
+        <div class="about-card">
+            <h2>✨ Key Features</h2>
+            <ul>
+                <li>Add, edit, and delete webpages.</li>
+                <li>Create links between webpages.</li>
+                <li>Search webpages by name.</li>
+                <li>Calculate and display PageRank scores.</li>
+                <li>View webpage ranking results.</li>
+                <li>Visualize graph connections.</li>
+                <li>View dashboard statistics.</li>
+            </ul>
+        </div>
+
+        <!-- Applications -->
+        <div class="about-card">
+            <h2>🌐 Applications</h2>
+            <ul>
+                <li>Understanding search engine ranking concepts.</li>
+                <li>Analyzing webpage link structures.</li>
+                <li>Studying graph-based ranking algorithms.</li>
+                <li>Demonstrating graph representation techniques.</li>
+            </ul>
+        </div>
+
+        <!-- Future Enhancements -->
+        <div class="about-card">
+            <h2>🚀 Future Enhancements</h2>
+            <ul>
+                <li>Support for larger webpage networks.</li>
+                <li>Advanced graph visualization.</li>
+                <li>Improved ranking analysis.</li>
+                <li>Enhanced user interface and reporting.</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
 
 
             <footer class="main-footer">

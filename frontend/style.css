@@ -2526,3 +2526,117 @@ button:disabled {
 .sidebar .logo span {
     color: #ffffff !important;
 }
+
+/* ABOUT PROJECT */
+
+.about-container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 25px;
+}
+
+.about-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.about-header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.about-header p {
+    color: #64748b;
+    line-height: 1.7;
+}
+
+.about-card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    padding: 25px;
+    margin-bottom: 22px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+}
+
+.about-card h2 {
+    font-size: 21px;
+    margin-bottom: 18px;
+    color: #1e293b;
+}
+
+.about-card p,
+.about-card li {
+    color: #475569;
+    line-height: 1.8;
+}
+
+.about-card ul {
+    padding-left: 22px;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.tech-item {
+    background: #f8fafc;
+    padding: 18px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #e2e8f0;
+}
+
+.tech-item h3 {
+    color: #2563eb;
+    margin-bottom: 8px;
+}
+
+.tech-item p {
+    margin: 0;
+}
+
+.architecture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.architecture-box {
+    width: 90%;
+    max-width: 450px;
+    padding: 18px;
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 600;
+    color: #1e40af;
+}
+
+.architecture-box small {
+    font-weight: normal;
+    color: #475569;
+}
+
+.architecture-arrow {
+    font-size: 24px;
+    color: #64748b;
+}
+
+@media (max-width: 600px) {
+    .about-container {
+        padding: 12px;
+    }
+
+    .about-card {
+        padding: 18px;
+    }
+
+    .about-header h1 {
+        font-size: 26px;
+    }
+}
